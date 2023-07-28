@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/style.css">
+    <title>سایت ارز دیجیتال</title>
+</head>
+<body class="body">
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active"><b><i>XYZ</i></b></a>
+        <a href="#banner"><b>بنر سایت</b></a>
+        <a href="#summary"><b>توضیحات</b></a>
+        <a href="#coinlist"><b>لیست کوین</b></a>
+        <a href="#convertbox"><b>تبدیل ارزها</b></a>
+        <a href="#footer"><b>پاورقی</b></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">|||
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <!------------------------------------------------------------>
+
+    <div class="slideshow-container" id="banner">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img class="slideshow-img" src="Assets/images/Bannerimg1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img class="slideshow-img" src="Assets/images/Bannerimg2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img class="slideshow-img" src="Assets/images/Bannerimg3.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if(n > slides.length) {
+                slideIndex = 1
+            }
+            if(n < 1) {
+                slideIndex = slides.length
+            }
+            for(i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for(i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <div class="summary" id="summary">
+        <p class="maintxt"><b>خرید و فروش امن بیت کوین و ارزهای دیجیتال</b></p>
+        <p class="subtxt"><b><i>بازار حرفه ای فروش وخرید امن دیجیتال با بالاترین سطح امنیت و کاربری آسان</i></b></p>
+        <p class="subtxt-2">ارز دیجیتال یا همان cryptocurrency، که معادل فارسی آن رمز ارز می باشد در واقع یک نوع پول یا ارز دیجیتالی است که جایگزین ارز های رایج می باشد، رمز ارز ها انواع مختلفی دارند که هر کدام از آن ها کاربرد خاصی داشته و به دلیل ویژگی های منحصر به فردشان مورد استقبال بسیاری از افراد در سراسر جهان قرار گرفته است. با جهانی شدن فضای دیجیتال و استفاده روز افزون افراد در زندگی روز مره خود از آن عده ای به این فکر افتادند تا معاملات پولی خود را نیز به این فضا منتقل کنند که نتیجه این تلاش ها تولید واحد معاملاتی با نام ارز دیجیتال بود. این نوع ارز ها در واقع وجود خارجی ندارند و تنها در فضای اینترنتی قادر به فعالیت می باشند و شما در دنیای واقعی هیچ معادل فیزیکی برای آن ها پیدا نمی کنید.
+
+            در واقع این نوع ارز ها نه تنها وجود فیزیکی ندارند بلکه حتی نام نهاد سازنده آن ها نیز کاملاً مشخص نیست و همچنان در هاله ای از ابهام قرار دارد، اما با وجود این شرایط شاهد گسترش هرچه بیشتر آن ها در بین افراد مختلف هستیم.
+            
+            مهم ترین دلیلی که باعث گرایش افراد به سمت ارز دیجیتال شده است امنیت بالا در استفاده از این ارز ها می باشد که دلیل آن استفاده از رمز های بسیار پیچیده در ساخت آن ها می باشد، از جمله دلایل دیگری که وجود دارد عدم پیچیدگی و آسان بودن روند معاملات در این بازار می باشد و همچنین قدرت نقد شوندگی بالایی که این ارز ها دارند و ... همه این دلایل سبب علاقمندی افراد به این بازار مالی شده است. در این مقاله به ارائه مطالبی در رابطه با تعریف ارز دیجیتال، کاربرد آن و مزایا و معایب و آن پرداخته شده است.</p>
+    </div>
+
+      <!---------------------------------------------------------------->
+
+    <table class="body-2" id="coinlist">
+        <thead class="body2head">
+            <tr>
+                <th>شماره</th>
+                <th>نام</th>
+                <th>قیمت دلاری</th>
+                <th>تغییرات 24 ساعت اخیر</th>
+                <th>خرید و فروش</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="body2tr">
+                <th ><b>1</b></th>
+                <th class="body2table">
+                    <img class="body2imgs" src="Assets/images/Bitcoin.png" alt="">
+                    <div class="body2taplename">
+                        <p class="body2tablename-1">بیت کوین</p>
+                        <p class="body2tablename-2">BTC</p>
+                    </div>
+                </th>
+                <th><p>29,306.9 $</p></th>
+                <th><p>1.08%+</p></th>
+                <th><button class="body2button"><b><i>خرید و فروش</i><b/></button></th>
+            </tr>
+            <tr class="body2tr">
+                <th><b>2</b></th>
+                <th class="body2table">
+                    <img class="body2imgs" src="Assets/images/Usdt.png" alt="">
+                    <div class="body2taplename">
+                        <p class="body2tablename-1">تتر</p>
+                        <p class="body2tablename-2">USTD</p>
+                    </div>
+                </th>
+                <th><p>1 $</p></th>
+                <th><p>0.52%+</p></th>
+                <th><button class="body2button"><b><i>خرید و فروش</i></b></button></th>
+            </tr>
+            <tr class="body2tr">
+                <th><b>3</b></th>
+                <th class="body2table">
+                    <img class="body2imgs" src="Assets/images/Eth.jpg" alt="">
+                    <div class="body2taplename">
+                        <p class="body2tablename-1">اتریوم</p>
+                        <p class="body2tablename-2">ETH</p>
+                    </div>
+                </th>
+                <th><p>1,850.2 $</p></th>
+                <th><p>0.33%+</p></th>
+                <th><button class="body2button"><b><i>خرید و فروش</i></b></button></th>
+            </tr>
+            <tr class="body2tr">
+                <th><b>4</b></th>
+                <th class="body2table">
+                    <img class="body2imgs" src="Assets/images/Shib.png" alt="">
+                    <div class="body2taplename">
+                        <p class="body2tablename-1">هزار شیبا</p>
+                        <p class="body2tablename-2">SHIB</p>
+                    </div>
+                </th>
+                <th><p>385 $</p></th>
+                <th><p>1.36%+</p></th>
+                <th><button class="body2button"><b><i>خرید و فروش</i></b></button></th>
+            </tr>
+            <tr class="body2tr">
+                <th><b>5</b></th>
+                <th class="body2table">
+                    <img class="body2imgs" src="Assets/images/Doge.jpg" alt="">
+                    <div class="body2taplename">
+                        <p class="body2tablename-1">دوج کوین</p>
+                        <p class="body2tablename-2">DOGE</p>
+                    </div>
+                </th>
+                <th><p>0.07873 $</p></th>
+                <th><p>1.94%+</p></th>
+                <th><button class="body2button"><b><i>خرید و فروش</i></b></button></th>
+            </tr>
+        </tbody>
+    </table>
+    <a class="body2showmore" href="index2.html"><b>نمایش بیشتر</b></a>
+
+    <!----------------------------------------------------------->
+
+    <div id="convertbox" class="body3">
+        <div class="body3txt">
+            <p class="maintxt"><b>تبدیل ارزها</b></p>
+            <p class="subtxt"><b><i>شما میتوانید با انتخاب ارز مورد نظر خود از یکی از لیست های زیر وارد صفحه ی خرید و فروش شوید.</i></b></p>
+        </div>
+        <div class="body3parent">
+            <div class="body-3">
+                <button class="body3button"><b>ارزها</b></button>
+                <div class="body3items">
+                    <a href="#" class="body3item">
+                        <img class="body3img" src="Assets/images/Bitcoin.png" alt="">
+                        <b>BTC</b>
+                    </a>
+                    <a href="#">
+                        <img class="body3img" src="Assets/images/Usdt.png" alt="">
+                        <b>USTD</b>
+                    </a>
+                    <a href="#">
+                        <img class="body3img" src="Assets/images/Eth.jpg" alt="">
+                        <b>ETH</b>
+                    </a>
+                    <a href="#">
+                        <img class="body3img" src="Assets/images/Shib.png" alt="">
+                        <b>SHIB</b>
+                    </a>
+                    <a href="#">
+                        <img class="body3img" src="Assets/images/Doge.jpg" alt="">
+                        <b>DOGE</b>
+                    </a>
+                </div>
+            </div>
+            <div class="body-3">
+                <button class="body3button"><b>ارزها</b></button>
+                <div class="body3items">
+                    <a href="#">
+                        <img class="body3img" src="Assets/images/Trx.png" alt="">
+                        <b>TRX</b>
+                    </a>
+                    <a href="#">
+                        <img class="body3img" src="Assets/images/Bch.png" alt="">
+                        <b>BTH</b>
+                    </a>
+                    <a href="#">
+                        <img class="body3img" src="Assets/images/Ltc.png" alt="">
+                        <b>LTC</b>
+                    </a>
+                    <a href="#">
+                        <img class="body3img" src="Assets/images/Etc.png" alt="">
+                        <b>ETC</b>
+                    </a>
+                    <a href="#">
+                        <img class="body3img" src="Assets/images/Ada.png" alt="">
+                        <b>ADA</b>
+                    </a>
+                </div>
+            </div>
+            <div class="body-3">
+                <button class="body3button"><b>ارزها</b></button>
+                <div class="body3items">
+                    <a href="#">
+                        <img class="body3img" src="Assets/images/Bnb.png" alt="">
+                        <b>BNB</b>
+                    </a>
+                    <a href="#">
+                        <img class="body3img" src="Assets/images/Eos.png" alt="">
+                        <b>EOS</b>
+                    </a>
+                    <a href="#">
+                        <img class="body3img" src="Assets/images/Xlm.png" alt="">
+                        <b>XLM</b>
+                    </a>
+                    <a href="#">
+                        <img class="body3img" src="Assets/images/Uni.png" alt="">
+                        <b>UNI</b>
+                    </a>
+                    <a href="#">
+                        <img class="body3img" src="Assets/images/Link.png" alt="">
+                        <b>LINK</b>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!------------------------------------------------------------------------------->
+<footer class="footer" id="footer">
+    <hr class="footerhr">
+    <div class="footerbody">
+        <a href="#" class="logo"><b><i>XYZ</i></b></a>
+        <div class="footeritem">
+            <a href="" class="footeritem1"><b>راهنمای استفاده</b></a>
+            <a href="" class="footeritem2">صفحه اصلی</a>
+            <a href="" class="footeritem2">نحوه ثبت سفارش</a>
+            <a href="" class="footeritem2">قوانین و مقررات</a>
+        </div>
+        <div class="footeritem">
+            <a href="" class="footeritem1"><b>راه های ارتباطی</b></a>
+            <a href="" class="footeritem2">support@xyz.ir</a>
+            <a href="" class="footeritem2">0937*****78</a>
+            <a href="" class="footeritem2">0993*****68</a>
+        </div>
+    </div>
+</footer>
+</html>
