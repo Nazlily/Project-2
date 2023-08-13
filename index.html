@@ -1,279 +1,430 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/style.css">
-    <title>سایت ارز دیجیتال</title>
+    <link rel="stylesheet" href="Assets/style/style.css">
+    <link rel="icon" type="image/x-icon" href="Assets/images/favicon.ico">
+    <title>XYZ</title>
 </head>
 <body class="body">
-    <div class="topnav" id="myTopnav">
-        <a href="#" class="active"><b><i>XYZ</i></b></a>
-        <a href="#banner"><b>بنر سایت</b></a>
-        <a href="#summary"><b>توضیحات</b></a>
-        <a href="#coinlist"><b>لیست کوین</b></a>
-        <a href="#convertbox"><b>تبدیل ارزها</b></a>
-        <a href="#footer"><b>پاورقی</b></a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">|||
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="active"><b><i>XYZ</i></b></a>
+            <a href="#banner"><b>بنر سایت</b></a>
+            <a href="#summary"><b>توضیحات</b></a>
+            <a href="#coinlist"><b>لیست کوین</b></a>
+            <a href="#convertbox"><b>تبدیل ارزها</b></a>
+            <a href="#footer"><b>پاورقی</b></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">|||
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
 
     <!------------------------------------------------------------>
 
-    <div class="slideshow-container" id="banner">
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img class="slideshow-img" src="Assets/images/Bannerimg1.jpg" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img class="slideshow-img" src="Assets/images/Bannerimg2.jpg" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img class="slideshow-img" src="Assets/images/Bannerimg3.jpg" style="width:100%">
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if(n > slides.length) {
-                slideIndex = 1
-            }
-            if(n < 1) {
-                slideIndex = slides.length
-            }
-            for(i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for(i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
-
-    <div class="summary" id="summary">
-        <p class="maintxt"><b>خرید و فروش امن بیت کوین و ارزهای دیجیتال</b></p>
-        <p class="subtxt"><b><i>بازار حرفه ای فروش وخرید امن دیجیتال با بالاترین سطح امنیت و کاربری آسان</i></b></p>
-        <p class="subtxt-2">ارز دیجیتال یا همان cryptocurrency، که معادل فارسی آن رمز ارز می باشد در واقع یک نوع پول یا ارز دیجیتالی است که جایگزین ارز های رایج می باشد، رمز ارز ها انواع مختلفی دارند که هر کدام از آن ها کاربرد خاصی داشته و به دلیل ویژگی های منحصر به فردشان مورد استقبال بسیاری از افراد در سراسر جهان قرار گرفته است. با جهانی شدن فضای دیجیتال و استفاده روز افزون افراد در زندگی روز مره خود از آن عده ای به این فکر افتادند تا معاملات پولی خود را نیز به این فضا منتقل کنند که نتیجه این تلاش ها تولید واحد معاملاتی با نام ارز دیجیتال بود. این نوع ارز ها در واقع وجود خارجی ندارند و تنها در فضای اینترنتی قادر به فعالیت می باشند و شما در دنیای واقعی هیچ معادل فیزیکی برای آن ها پیدا نمی کنید.
-
-            در واقع این نوع ارز ها نه تنها وجود فیزیکی ندارند بلکه حتی نام نهاد سازنده آن ها نیز کاملاً مشخص نیست و همچنان در هاله ای از ابهام قرار دارد، اما با وجود این شرایط شاهد گسترش هرچه بیشتر آن ها در بین افراد مختلف هستیم.
-            
-            مهم ترین دلیلی که باعث گرایش افراد به سمت ارز دیجیتال شده است امنیت بالا در استفاده از این ارز ها می باشد که دلیل آن استفاده از رمز های بسیار پیچیده در ساخت آن ها می باشد، از جمله دلایل دیگری که وجود دارد عدم پیچیدگی و آسان بودن روند معاملات در این بازار می باشد و همچنین قدرت نقد شوندگی بالایی که این ارز ها دارند و ... همه این دلایل سبب علاقمندی افراد به این بازار مالی شده است. در این مقاله به ارائه مطالبی در رابطه با تعریف ارز دیجیتال، کاربرد آن و مزایا و معایب و آن پرداخته شده است.</p>
-    </div>
-
-      <!---------------------------------------------------------------->
-
-    <table class="body-2" id="coinlist">
-        <thead class="body2head">
-            <tr>
-                <th>شماره</th>
-                <th>نام</th>
-                <th>قیمت دلاری</th>
-                <th>تغییرات 24 ساعت اخیر</th>
-                <th>خرید و فروش</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="body2tr">
-                <th ><b>1</b></th>
-                <th class="body2table">
-                    <img class="body2imgs" src="Assets/images/Bitcoin.png" alt="">
-                    <div class="body2taplename">
-                        <p class="body2tablename-1">بیت کوین</p>
-                        <p class="body2tablename-2">BTC</p>
-                    </div>
-                </th>
-                <th><p>29,306.9 $</p></th>
-                <th><p>1.08%+</p></th>
-                <th><button class="body2button"><b><i>خرید و فروش</i><b/></button></th>
-            </tr>
-            <tr class="body2tr">
-                <th><b>2</b></th>
-                <th class="body2table">
-                    <img class="body2imgs" src="Assets/images/Usdt.png" alt="">
-                    <div class="body2taplename">
-                        <p class="body2tablename-1">تتر</p>
-                        <p class="body2tablename-2">USTD</p>
-                    </div>
-                </th>
-                <th><p>1 $</p></th>
-                <th><p>0.52%+</p></th>
-                <th><button class="body2button"><b><i>خرید و فروش</i></b></button></th>
-            </tr>
-            <tr class="body2tr">
-                <th><b>3</b></th>
-                <th class="body2table">
-                    <img class="body2imgs" src="Assets/images/Eth.jpg" alt="">
-                    <div class="body2taplename">
-                        <p class="body2tablename-1">اتریوم</p>
-                        <p class="body2tablename-2">ETH</p>
-                    </div>
-                </th>
-                <th><p>1,850.2 $</p></th>
-                <th><p>0.33%+</p></th>
-                <th><button class="body2button"><b><i>خرید و فروش</i></b></button></th>
-            </tr>
-            <tr class="body2tr">
-                <th><b>4</b></th>
-                <th class="body2table">
-                    <img class="body2imgs" src="Assets/images/Shib.png" alt="">
-                    <div class="body2taplename">
-                        <p class="body2tablename-1">هزار شیبا</p>
-                        <p class="body2tablename-2">SHIB</p>
-                    </div>
-                </th>
-                <th><p>385 $</p></th>
-                <th><p>1.36%+</p></th>
-                <th><button class="body2button"><b><i>خرید و فروش</i></b></button></th>
-            </tr>
-            <tr class="body2tr">
-                <th><b>5</b></th>
-                <th class="body2table">
-                    <img class="body2imgs" src="Assets/images/Doge.jpg" alt="">
-                    <div class="body2taplename">
-                        <p class="body2tablename-1">دوج کوین</p>
-                        <p class="body2tablename-2">DOGE</p>
-                    </div>
-                </th>
-                <th><p>0.07873 $</p></th>
-                <th><p>1.94%+</p></th>
-                <th><button class="body2button"><b><i>خرید و فروش</i></b></button></th>
-            </tr>
-        </tbody>
-    </table>
-    <a class="body2showmore" href="index2.html"><b>نمایش بیشتر</b></a>
-
-    <!----------------------------------------------------------->
-
-    <div id="convertbox" class="body3">
-        <div class="body3txt">
-            <p class="maintxt"><b>تبدیل ارزها</b></p>
-            <p class="subtxt"><b><i>شما میتوانید با انتخاب ارز مورد نظر خود از یکی از لیست های زیر وارد صفحه ی خرید و فروش شوید.</i></b></p>
-        </div>
-        <div class="body3parent">
-            <div class="body-3">
-                <button class="body3button"><b>ارزها</b></button>
-                <div class="body3items">
-                    <a href="#" class="body3item">
-                        <img class="body3img" src="Assets/images/Bitcoin.png" alt="">
-                        <b>BTC</b>
-                    </a>
-                    <a href="#">
-                        <img class="body3img" src="Assets/images/Usdt.png" alt="">
-                        <b>USTD</b>
-                    </a>
-                    <a href="#">
-                        <img class="body3img" src="Assets/images/Eth.jpg" alt="">
-                        <b>ETH</b>
-                    </a>
-                    <a href="#">
-                        <img class="body3img" src="Assets/images/Shib.png" alt="">
-                        <b>SHIB</b>
-                    </a>
-                    <a href="#">
-                        <img class="body3img" src="Assets/images/Doge.jpg" alt="">
-                        <b>DOGE</b>
-                    </a>
-                </div>
+    <section>
+        <div class="slideshow-container" id="banner">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="slideshow-img" src="Assets/images/Bannerimg1.jpg" alt="XYZ">
             </div>
-            <div class="body-3">
-                <button class="body3button"><b>ارزها</b></button>
-                <div class="body3items">
-                    <a href="#">
-                        <img class="body3img" src="Assets/images/Trx.png" alt="">
-                        <b>TRX</b>
-                    </a>
-                    <a href="#">
-                        <img class="body3img" src="Assets/images/Bch.png" alt="">
-                        <b>BTH</b>
-                    </a>
-                    <a href="#">
-                        <img class="body3img" src="Assets/images/Ltc.png" alt="">
-                        <b>LTC</b>
-                    </a>
-                    <a href="#">
-                        <img class="body3img" src="Assets/images/Etc.png" alt="">
-                        <b>ETC</b>
-                    </a>
-                    <a href="#">
-                        <img class="body3img" src="Assets/images/Ada.png" alt="">
-                        <b>ADA</b>
-                    </a>
-                </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img class="slideshow-img" src="Assets/images/Bannerimg2.jpg" alt="XYZ">
             </div>
-            <div class="body-3">
-                <button class="body3button"><b>ارزها</b></button>
-                <div class="body3items">
-                    <a href="#">
-                        <img class="body3img" src="Assets/images/Bnb.png" alt="">
-                        <b>BNB</b>
-                    </a>
-                    <a href="#">
-                        <img class="body3img" src="Assets/images/Eos.png" alt="">
-                        <b>EOS</b>
-                    </a>
-                    <a href="#">
-                        <img class="body3img" src="Assets/images/Xlm.png" alt="">
-                        <b>XLM</b>
-                    </a>
-                    <a href="#">
-                        <img class="body3img" src="Assets/images/Uni.png" alt="">
-                        <b>UNI</b>
-                    </a>
-                    <a href="#">
-                        <img class="body3img" src="Assets/images/Link.png" alt="">
-                        <b>LINK</b>
-                    </a>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img class="slideshow-img" src="Assets/images/Bannerimg3.jpg" alt="XYZ">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    
+        <div class="summary" id="summary">
+            <span class="maintxt"><b>خرید و فروش امن بیت کوین و ارزهای دیجیتال</b></span>
+            <span class="subtxt"><b><i>بازار حرفه ای فروش وخرید امن دیجیتال با بالاترین سطح امنیت و کاربری آسان</i></b></span>
+            <p class="subtxt-2">ارز دیجیتال یا همان cryptocurrency، که معادل فارسی آن رمز ارز می باشد در واقع یک نوع پول یا ارز دیجیتالی است که جایگزین ارز های رایج می باشد، رمز ارز ها انواع مختلفی دارند که هر کدام از آن ها کاربرد خاصی داشته و به دلیل ویژگی های منحصر به فردشان مورد استقبال بسیاری از افراد در سراسر جهان قرار گرفته است. با جهانی شدن فضای دیجیتال و استفاده روز افزون افراد در زندگی روز مره خود از آن عده ای به این فکر افتادند تا معاملات پولی خود را نیز به این فضا منتقل کنند که نتیجه این تلاش ها تولید واحد معاملاتی با نام ارز دیجیتال بود. این نوع ارز ها در واقع وجود خارجی ندارند و تنها در فضای اینترنتی قادر به فعالیت می باشند و شما در دنیای واقعی هیچ معادل فیزیکی برای آن ها پیدا نمی کنید.
+    
+                در واقع این نوع ارز ها نه تنها وجود فیزیکی ندارند بلکه حتی نام نهاد سازنده آن ها نیز کاملاً مشخص نیست و همچنان در هاله ای از ابهام قرار دارد، اما با وجود این شرایط شاهد گسترش هرچه بیشتر آن ها در بین افراد مختلف هستیم.
+                
+                مهم ترین دلیلی که باعث گرایش افراد به سمت ارز دیجیتال شده است امنیت بالا در استفاده از این ارز ها می باشد که دلیل آن استفاده از رمز های بسیار پیچیده در ساخت آن ها می باشد، از جمله دلایل دیگری که وجود دارد عدم پیچیدگی و آسان بودن روند معاملات در این بازار می باشد و همچنین قدرت نقد شوندگی بالایی که این ارز ها دارند و ... همه این دلایل سبب علاقمندی افراد به این بازار مالی شده است. در این مقاله به ارائه مطالبی در رابطه با تعریف ارز دیجیتال، کاربرد آن و مزایا و معایب و آن پرداخته شده است.
+            </p>
+        </div>
+    
+          <!---------------------------------------------------------------->
+        
+        <div class="body-2">
+            <div class="body2head">
+                <span>شماره</span>
+                <span>نام</span>
+                <span>قیمت دلاری</span>
+                <span>تغییرات 24 ساعت اخیر</span>
+                <span>خرید و فروش</span>
+            </div>
+            <div class="body2body">
+                <div class="body2tr">
+                    <span class="body2number"><b>1</b></span>
+                    <div class="body2table">
+                        <img class="body2imgs" src="./Assets/images/Bitcoin.png" alt="BTC">
+                        <span class="body2tablename"><b>BTC / بیت کوین</b></span>
+                    </div>
+                    <span class="body2price"><b>29,306.9 $</b></span>
+                    <span class="body2changes"><b>1.08%+</b></span>
+                    <button class="body2button"><b>خرید و فروش</b></button>
                 </div>
+                <div class="body2tr">
+                    <span class="body2number"><b>2</b></span>
+                    <div class="body2table">
+                        <img class="body2imgs" src="./Assets/images/Usdt.png" alt="USDT">
+                        <span class="body2tablename"><b>USDT / تتر</b></span>
+                    </div>
+                    <span class="body2price"><b>29,306.9 $</b></span>
+                    <span class="body2changes"><b>0.52%+</b></span>
+                    <button class="body2button"><b>خرید و فروش</b></button>
+                </div>
+                <div class="body2tr">
+                    <span class="body2number"><b>3</b></span>
+                    <div class="body2table">
+                        <img class="body2imgs" src="./Assets/images/Eth.jpg" alt="ETH">
+                        <span class="body2tablename"><b>ETH / اتریوم</b></span>
+                    </div>
+                    <span class="body2price"><b>29,306.9 $</b></span>
+                    <span class="body2changes"><b>0.33%+</b></span>
+                    <button class="body2button"><b>خرید و فروش</b></button>
+                </div>
+                <div class="body2tr">
+                    <span class="body2number"><b>4</b></span>
+                    <div class="body2table">
+                        <img class="body2imgs" src="./Assets/images/Shib.png" alt="SHIB">
+                        <span class="body2tablename"><b>SHIB / هزار شیبا</b></span>
+                    </div>
+                    <span class="body2price"><b>29,306.9 $</b></span>
+                    <span class="body2changes"><b>1.36%+</b></span>
+                    <button class="body2button"><b>خرید و فروش</b></button>
+                </div>
+                <div class="body2tr">
+                    <span class="body2number"><b>5</b></span>
+                    <div class="body2table">
+                        <img class="body2imgs" src="./Assets/images/Doge.jpg" alt="DOGE">
+                        <span class="body2tablename"><b>DOGE / دوج کوین</b></span>
+                    </div>
+                    <span class="body2price"><b>29,306.9 $</b></span>
+                    <span class="body2changes"><b>1.94%+</b></span>
+                    <button class="body2button"><b>خرید و فروش</b></button>
+                </div>
+                
+            </div>
+            <button class="showbutton" onclick="showMoreHandler(event)"><b>نمایش بیشتر</b></button>
+        </div>
+
+        <!-------------------------------------------------------->
+
+        <!--<table class="body-2" id="coinlist">
+            <thead class="body2head">
+                <tr class="body2tr">
+                    <th>شماره</th>
+                    <th>نام</th>
+                    <th>قیمت دلاری</th>
+                    <th>تغییرات 24 ساعت اخیر</th>
+                    <th>خرید و فروش</th>
+                </tr>
+            </thead>
+            <tbody class="body2body">
+                <tr class="body2tr">
+                    <td ><b>1</b></td>
+                    <td class="body2table">
+                        <img class="body2imgs" src="Assets/images/Bitcoin.png" alt="BTC">
+                        <div class="body2taplename">
+                            <span class="body2tablename-1">بیت کوین</span>
+                            <span class="body2tablename-2">BTC</span>
+                        </div>
+                    </td>
+                    <td><span>29,306.9 $</span></td>
+                    <td><span>1.08%+</span></td>
+                    <td><button class="body2button"><b><i>خرید و فروش</i><b/></button></td>
+                </tr>
+                <tr class="body2tr">
+                    <td><b>2</b></td>
+                    <td class="body2table">
+                        <img class="body2imgs" src="Assets/images/Usdt.png" alt="USTD">
+                        <div class="body2taplename">
+                            <span class="body2tablename-1">تتر</span>
+                            <span class="body2tablename-2">USTD</span>
+                        </div>
+                    </td>
+                    <td><span>1 $</span></td>
+                    <td><span>0.52%+</span></td>
+                    <td><button class="body2button"><b><i>خرید و فروش</i></b></button></td>
+                </tr>
+                <tr class="body2tr">
+                    <td><b>3</b></td>
+                    <td class="body2table">
+                        <img class="body2imgs" src="Assets/images/Eth.jpg" alt="ETH">
+                        <div class="body2taplename">
+                            <span class="body2tablename-1">اتریوم</span>
+                            <span class="body2tablename-2">ETH</span>
+                        </div>
+                    </td>
+                    <td><span>1,850.2 $</span></td>
+                    <td><span>0.33%+</span></td>
+                    <td><button class="body2button"><b><i>خرید و فروش</i></b></button></td>
+                </tr>
+                <tr class="body2tr">
+                    <td><b>4</b></td>
+                    <td class="body2table">
+                        <img class="body2imgs" src="Assets/images/Shib.png" alt="SHIB">
+                        <div class="body2taplename">
+                            <span class="body2tablename-1">هزار شیبا</span>
+                            <span class="body2tablename-2">SHIB</span>
+                        </div>
+                    </td>
+                    <td><span>385 $</span></td>
+                    <td><span>1.36%+</span></td>
+                    <td><button class="body2button"><b><i>خرید و فروش</i></b></button></td>
+                </tr>
+                <tr class="body2tr">
+                    <td><b>5</b></td>
+                    <td class="body2table">
+                        <img class="body2imgs" src="Assets/images/Doge.jpg" alt="DOGE">
+                        <div class="body2taplename">
+                            <span class="body2tablename-1">دوج کوین</span>
+                            <span class="body2tablename-2">DOGE</span>
+                        </div>
+                    </td>
+                    <td><span>0.07873 $</span></td>
+                    <td><span>1.94%+</span></td>
+                    <td><button class="body2button"><b><i>خرید و فروش</i></b></button></td>
+                </tr>
+                <tr class="body2tr">
+                    <td><b>6</b></td>
+                    <td class="body2table">
+                        <img class="body2imgs" src="Assets/images/Trx.png" alt="TRX">
+                        <div class="body2taplename">
+                            <p class="body2tablename-1">ترون</p>
+                            <p class="body2tablename-2">TRX</p>
+                        </div>
+                    </td>
+                    <td><p>0.07873 $</p></td>
+                    <td><p>0.82%+</p></td>
+                    <td><button class="body2button"><b><i>خرید و فروش</i></b></button></td>
+                </tr>
+                <tr class="body2tr">
+                    <td><b>7</b></td>
+                    <td class="body2table">
+                        <img class="body2imgs" src="Assets/images/Bch.png" alt="BTH">
+                        <div class="body2taplename">
+                            <p class="body2tablename-1">بیت کوین کش</p>
+                            <p class="body2tablename-2">BTH</p>
+                        </div>
+                    </td>
+                    <td><p>238.15 $</p></td>
+                    <td><p>1.63%+</p></td>
+                    <td><button class="body2button"><b><i>خرید و فروش</i></b></button></td>
+                </tr>
+                <tr class="body2tr">
+                    <td><b>8</b></td>
+                    <td class="body2table">
+                        <img class="body2imgs" src="Assets/images/Ltc.png" alt="LTC">
+                        <div class="body2taplename">
+                            <p class="body2tablename-1">لایت کوین</p>
+                            <p class="body2tablename-2">LTC</p>
+                        </div>
+                    </td>
+                    <td><p>89.56 $</p></td>
+                    <td><p>1.34%+</p></td>
+                    <td><button class="body2button"><b><i>خرید و فروش</i></b></button></td>
+                </tr>
+                <tr class="body2tr">
+                    <td><b>9</b></td>
+                    <td class="body2table">
+                        <img class="body2imgs" src="Assets/images/Etc.png" alt="ETC">
+                        <div class="body2taplename">
+                            <p class="body2tablename-1">اتریوم کلاسیک</p>
+                            <p class="body2tablename-2">ETC</p>
+                        </div>
+                    </td>
+                    <td><p>18.106 $</p></td>
+                    <td><p>1.08%+</p></td>
+                    <td><button class="body2button"><b><i>خرید و فروش</i></b></button></td>
+                </tr>
+                <tr class="body2tr">
+                    <td><b>10</b></td>
+                    <td class="body2table">
+                        <img class="body2imgs" src="Assets/images/Ada.png" alt="ADA">
+                        <div class="body2taplename">
+                            <p class="body2tablename-1">کاردانو</p>
+                            <p class="body2tablename-2">ADA</p>
+                        </div>
+                    </td>
+                    <td><p>0.305 $</p></td>
+                    <td><p>0.91%+</p></td>
+                    <td><button class="body2button"><b><i>خرید و فروش</i></b></button></td>
+                </tr>
+                <tr class="body2tr">
+                    <td><b>11</b></td>
+                    <td class="body2table">
+                        <img class="body2imgs" src="Assets/images/Bnb.png" alt="BNB">
+                        <div class="body2taplename">
+                            <p class="body2tablename-1">بایننس کوین</p>
+                            <p class="body2tablename-2">BNB</p>
+                        </div>
+                    </td>
+                    <td><p>238.42 $</p></td>
+                    <td><p>1.28%+</p></td>
+                    <td><button class="body2button"><b><i>خرید و فروش</i></b></button></td>
+                </tr>
+                <tr class="body2tr">
+                    <td><b>12</b></td>
+                    <td class="body2table">
+                        <img class="body2imgs" src="Assets/images/Eos.png" alt="EOS">
+                        <div class="body2taplename">
+                            <p class="body2tablename-1">ایاس</p>
+                            <p class="body2tablename-2">EOS</p>
+                        </div>
+                    </td>
+                    <td><p>0.74 $</p></td>
+                    <td><p>0.51%-</p></td>
+                    <td><button class="body2button"><b><i>خرید و فروش</i></b></button></td>
+                </tr>
+                <tr class="body2tr">
+                    <td><b>13</b></td>
+                    <td class="body2table">
+                        <img class="body2imgs" src="Assets/images/Xlm.png" alt="XLM">
+                        <div class="body2taplename">
+                            <p class="body2tablename-1">استلار</p>
+                            <p class="body2tablename-2">XLM</p>
+                        </div>
+                    </td>
+                    <td><p>0.14078 $</p></td>
+                    <td><p>2.85%-</p></td>
+                    <td><button class="body2button"><b><i>خرید و فروش</i></b></button></td>
+                </tr>
+                <tr class="body2tr">
+                    <td><b>14</b></td>
+                    <td class="body2table">
+                        <img class="body2imgs" src="Assets/images/Uni.png" alt="UNI">
+                        <div class="body2taplename">
+                            <p class="body2tablename-1">یونی سواپ</p>
+                            <p class="body2tablename-2">UNI</p>
+                        </div>
+                    </td>
+                    <td><p>5.855 $</p></td>
+                    <td><p>0.39%+</p></td>
+                    <td><button class="body2button"><b><i>خرید و فروش</i></b></button></td>
+                </tr>
+                <tr class="body2tr">
+                    <td><b>15</b></td>
+                    <td class="body2table">
+                        <img class="body2imgs" src="Assets/images/Link.png" alt="LINK">
+                        <div class="body2taplename">
+                            <p class="body2tablename-1">چین لینک</p>
+                            <p class="body2tablename-2">LINK</p>
+                        </div>
+                    </td>
+                    <td><p>7.564 $</p></td>
+                    <td><p>1.86%+</p></td>
+                    <td><button class="body2button"><b><i>خرید و فروش</i></b></button></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                  <td colspan="5">
+                    <span id="btn">Show more</span>
+                  </td>
+                </tr>
+              </tbody>
+        </table>-->
+
+        <!----------------------------------------------------------->
+    
+        <div id="convertbox" class="body3">
+            <div class="body3txt">
+                <span class="maintxt"><b>تبدیل ارزها</b></span>
+                <p class="subtxt"><b><i>شما میتوانید با انتخاب ارز مورد نظر خود از یکی از لیست های زیر وارد صفحه ی خرید و فروش شوید.</i></b></p>
+            </div>
+            <div class="body3selectparent">
+                <select id="" class="body3select">
+                    <option class="body3items">
+                            لیست اول
+                    </option>
+                    <option class="body3items">
+                            BTC
+                    </option>
+                    <option class="body3items">
+                        USTD
+                    </option>
+                    <option class="body3items">
+                        ETH
+                    </option>
+                    <option class="body3items">
+                        SHIB
+                    </option>
+                    <option class="body3items">
+                        DOGE
+                    </option>
+                    <option class="body3items">
+                        TRX
+                    </option>
+                    <option class="body3items">
+                        BTH
+                    </option>
+                </select>
+                <select class="body3select">
+                    <option class="body3items">
+                        لیست دوم
+                    </option>
+                    <option class="body3items">
+                        LTC
+                    </option>
+                    <option class="body3items">
+                        ETC
+                    </option>
+                    <option class="body3items">
+                        ADA
+                    </option>
+                    <option class="body3items">
+                        BNB
+                    </option>
+                    <option class="body3items">
+                        EOS
+                    </option>
+                    <option class="body3items">
+                        XLM
+                    </option>
+                    <option class="body3items">
+                        UNI
+                    </option>
+                    <option class="body3items">
+                        LINK
+                    </option>
+                </select>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!------------------------------------------------->
+
+    <footer class="footer" id="footer">
+        <hr class="footerhr">
+        <div class="footerbody">
+            <a href="#" class="logo"><b><i>XYZ</i></b></a>
+            <div class="footeritem">
+                <a href="" class="footeritem1"><b>راهنمای استفاده</b></a>
+                <a href="" class="footeritem2">صفحه اصلی</a>
+                <a href="" class="footeritem2">نحوه ثبت سفارش</a>
+                <a href="" class="footeritem2">قوانین و مقررات</a>
+            </div>
+            <div class="footeritem">
+                <a href="" class="footeritem1"><b>راه های ارتباطی</b></a>
+                <a href="" class="footeritem2">support@xyz.ir</a>
+                <a href="" class="footeritem2">0937*****78</a>
+                <a href="" class="footeritem2">0993*****68</a>
+            </div>
+        </div>
+    </footer>
+    <script src="Assets/script/script.js"></script>
 </body>
-<!------------------------------------------------------------------------------->
-<footer class="footer" id="footer">
-    <hr class="footerhr">
-    <div class="footerbody">
-        <a href="#" class="logo"><b><i>XYZ</i></b></a>
-        <div class="footeritem">
-            <a href="" class="footeritem1"><b>راهنمای استفاده</b></a>
-            <a href="" class="footeritem2">صفحه اصلی</a>
-            <a href="" class="footeritem2">نحوه ثبت سفارش</a>
-            <a href="" class="footeritem2">قوانین و مقررات</a>
-        </div>
-        <div class="footeritem">
-            <a href="" class="footeritem1"><b>راه های ارتباطی</b></a>
-            <a href="" class="footeritem2">support@xyz.ir</a>
-            <a href="" class="footeritem2">0937*****78</a>
-            <a href="" class="footeritem2">0993*****68</a>
-        </div>
-    </div>
-</footer>
 </html>

@@ -1,16 +1,49 @@
 .body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "mainFont";
     direction: rtl;
     background-color: #202020;
     width: 100%;
 }
-  
+
+@font-face {
+    font-family: "mainFont";
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Bold.eot");
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Bold.ttf") format("ttf");
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Bold.woff") format("woff");
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Bold.woff2") format("woff2");    
+}
+
+@font-face {
+    font-family: "mainFont";
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Light.eot");
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Light.ttf") format("ttf");
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Light.woff") format("woff");
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Light.woff2") format("woff2");    
+}
+
+@font-face {
+    font-family: "mainFont";
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Medium.eot");
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Medium.ttf") format("ttf");
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Medium.woff") format("woff");
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Medium.woff2") format("woff2");    
+}
+
+@font-face {
+    font-family: "mainFont";
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Thin.eot");
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Thin.ttf") format("ttf");
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Thin.woff") format("woff");
+    src: url("/Assets/fonts/vazir-font-v18.0.0/Vazir-Thin.woff2") format("woff2");   
+}
+
 .topnav {
     overflow: hidden;
     background-color: #333;
     padding: 10px 0;
-} 
+}
+
 .topnav a {
     float: right;
     display: block;
@@ -63,6 +96,7 @@
     }
 }
 
+
 .hr {
     border: 1px solid #bb7f25;
     margin: 0;
@@ -81,6 +115,7 @@
 .slideshow-img {
     vertical-align: middle;
     border: 5px solid #bb7f25;
+    width: 100%;
 }  
 
 .slideshow-container {
@@ -98,7 +133,7 @@
     margin-top: -22px;
     color: white;
     background-color: rgba(0, 0, 0, 0.8);
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
@@ -198,10 +233,46 @@
     border: 7px solid #bb7f25;
     background-color: #3b3b3b;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .body2head {
     color: #ddd;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.body2body {
+    width: 100%;
+}
+
+.body2tr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 15px;
+
+}
+
+.body2number {
+    margin-right: 20px;
+}
+
+.body2price {
+    margin-left: 90px;
+}
+
+.body2table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .body2imgs {
@@ -210,18 +281,10 @@
     height: 30px;
 }
 
-.body2table {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
-.body2taplename {
+
+.body2tablename {
     margin: 5px 5px 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .body2button {
@@ -231,9 +294,25 @@
     background-color: #c9c9c9;
     color: #333;
     cursor: pointer;
+    margin-left: 5px;
 }
 
-.body2showmore {
+.body2changes {
+    margin-left: 70px;
+}
+
+.showbutton {
+    background-color: #2b2b2b;
+    font-size: 20px;
+    color: #ddd;
+    border: 2px solid #bb7f25;
+    margin: 15px 0; 
+    padding: 10px;
+}
+
+
+
+/*.body2showmore {
     border: 3px solid #bb7f25;
     padding: 20px;
     text-decoration: none;
@@ -244,7 +323,9 @@
     font-size: 20px;
     margin: 45px auto 50px auto;
     width: 30%;
-}
+}*/
+
+
 
 body::-webkit-scrollbar {
     width: 20px;   
@@ -259,68 +340,20 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;       
     border: 3px solid #333;  
 }
-
-.body3button {
-    
-    border: 3px solid #bb7f25;
-    background-color: #3b3b3b;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 200px;
-    height: 100px;
-}
   
 .body-3 {
     position: relative;
     display: inline-block;
 }
   
-  .body3items {
-    display: none;
-    position: absolute;
+/*.body3items {
     background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    width: 200px;
-  }
-  
-  .body3items a {
-    color: black;
-    padding: 20px 16px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid #202020;
-  }
-  
-  .body3items a:hover {background-color: #f1f1f1}
-  
-  .body-3:hover .body3items {
-    display: block;
-  }
-  
-  .body-3:hover .body3button {
-    background-color: #bb7f25;
-    border: 3px solid #3b3b3b;
-    color: #202020;
-  }
+    height: 50px;
+    -webkit-appearance: none;
+}*/
 
-.body3img {
-    border-radius: 15px;
-    width: 30px;
-    height: 30px;
-}
-
-.body3parent {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
+.body3items :hover {
+    background-color: #a0a0a0
 }
 
 .body3txt {
@@ -328,7 +361,6 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
     color: #bb7f25;
-    /*margin: 105px 125px 105px 125px;*/
     padding-bottom: 30px;
 }
 
@@ -337,6 +369,21 @@ body::-webkit-scrollbar-thumb {
     height: auto;
     padding: 0 0 50px 0;
     margin: 125px 40px 0 40px;
+}
+
+.body3select {
+    padding: 20px 30px;
+    background-color: #3b3b3b;
+    color: #bb7f25;
+    font-size: 20px;
+    -webkit-appearance: none;
+}
+
+.body3selectparent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .footerhr {
@@ -388,3 +435,4 @@ body::-webkit-scrollbar-thumb {
     color: #ddd;
     margin-bottom: 25px;
 }
+
